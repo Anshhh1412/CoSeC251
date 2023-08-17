@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="323dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/cosec_logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:background="#6B26E6"
+        android:text=" SIGNUP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/signupusername"
+        app:layout_constraintEnd_toEndOf="@+id/signupgender"
+        app:layout_constraintStart_toStartOf="@+id/signupgender"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <EditText
+        android:id="@+id/signupusername"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="   Enter Name"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <EditText
+        android:id="@+id/signupgender"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="   Enter Gender"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signupusername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupusername"
+        app:layout_constraintTop_toBottomOf="@+id/signupusername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/signupage"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="   Enter Age"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signupgender"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/signupgender"
+        app:layout_constraintTop_toBottomOf="@+id/signupgender"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <EditText
+        android:id="@+id/signuppassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/editshape"
+        android:ems="10"
+        android:hint="   Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btnshape"
+        android:text="SIGNUP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signuppassword"
+        app:layout_constraintVertical_bias="0.194" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
